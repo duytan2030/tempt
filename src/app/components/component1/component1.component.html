@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-md-12">
+     <h4 style="float: right;">Tổng Tiền: {{tongTien}}</h4>
+    </div>
+</div>
+<div class="row">
+    <app-component2 *ngFor="let in4P of productInfor" [product]="in4P" (valueChange)="tinhTien($event)">
+    </app-component2>
+</div>
